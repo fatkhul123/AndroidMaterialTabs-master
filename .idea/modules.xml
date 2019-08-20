@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidMaterialTabs-master - Copy.iml" filepath="$PROJECT_DIR$/AndroidMaterialTabs-master - Copy.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fatkhultable.iml" filepath="$PROJECT_DIR$/fatkhultable.iml" />
     </modules>
   </component>
 </project>

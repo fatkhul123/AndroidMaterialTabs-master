@@ -1,0 +1,72 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFCFC"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d50000"
+        android:minHeight="?attr/actionBarSize"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+
+            android:id="@+id/num1"
+            android:layout_width="276dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:hint="   Sisi"
+            android:inputType="number"
+            android:padding="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/luas"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Luas"
+            android:background="@drawable/circle"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/kell"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:hint="Keliling"
+            android:background="@drawable/circle"
+            android:textColorHint="#000000" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nilai"
+        android:layout_width="360dp"
+        android:layout_height="442dp"
+        android:background="#FFFFFF"
+        android:hint="NILAI"
+        android:textColorHint="#A29292"
+        android:textSize="18sp" />
+</LinearLayout>
+</ScrollView>

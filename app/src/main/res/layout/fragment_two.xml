@@ -1,15 +1,205 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="info.androidhive.materialtabs.fragments.TwoFragment">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
 
-    <TextView
+
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="durung bar"
-        android:textSize="40dp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:background="#D8D2D2"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</LinearLayout>
+        <android.support.v7.widget.CardView
+            android:id="@+id/CV"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="32dp">
+
+                <ImageView
+                    android:id="@+id/persegi"
+                    android:layout_width="120dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/square">
+
+                </ImageView>
+
+                <TextView
+
+                    android:id="@+id/ps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/persegi"
+                    android:hint="Persegi"
+                    android:textColorHint="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold|italic" />
+
+
+                />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="32dp">
+
+                <ImageView
+                    android:id="@+id/persegipanjang"
+                    android:layout_width="120dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/rectangle" />
+
+                <TextView
+                    android:id="@+id/pp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/persegipanjang"
+                    android:hint="Persegi Panjang"
+                    android:textColorHint="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold|italic" />
+
+                />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CV3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="32dp">
+
+                <ImageView
+                    android:id="@+id/segitiga"
+                    android:layout_width="120dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/triangle" />
+
+                <TextView
+                    android:id="@+id/st"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/segitiga"
+                    android:hint="Segitiga"
+                    android:textColorHint="#030000"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold|italic" />
+
+                />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CV4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="32dp">
+
+                <ImageView
+                    android:id="@+id/jajargenjang"
+                    android:layout_width="120dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ppp" />
+
+                <TextView
+                    android:id="@+id/jg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/jajargenjang"
+                    android:hint="Jajar Genjang"
+                    android:textColorHint="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold|italic" />
+
+                />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CV5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="32dp">
+
+                <ImageView
+                    android:id="@+id/lingkaran"
+                    android:layout_width="120dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/oval" />
+
+                <TextView
+                    android:id="@+id/lk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/lingkaran"
+                    android:hint="Lingkaran"
+                    android:textColorHint="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold|italic" />
+
+                />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -19,43 +19,42 @@ import info.androidhive.materialtabs.fragments.TwoFragment;
 
 public class IconTextTabsActivity extends AppCompatActivity {
 
-    private Toolbar toolbar;
-    private TabLayout tabLayout;
+    private Toolbar toolbar2;
+    private TabLayout Tl;
     private ViewPager viewPager;
-    private int[] tabIcons = {
-            R.drawable.ic_tab_favourite,
-            R.drawable.ic_tab_call,
-            R.drawable.ic_tab_contacts
+    private int [] tabicons ={
+            R.drawable.calculator,
+            R.drawable.square,
+            R.drawable.box,
     };
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_icon_text_tabs);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
-
-        tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(viewPager);
-        setupTabIcons();
+        Tl = findViewById(R.id.tabs);
+        Tl.setupWithViewPager(viewPager);
+        setupTabicons();
+        toolbar2 = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar2);
     }
+        private void setupTabicons(){
+        Tl.getTabAt(0).setIcon(tabicons[0]);
+        Tl.getTabAt(1).setIcon(tabicons[1]);
+        Tl.getTabAt(2).setIcon(tabicons[2]);
+        }
 
-    private void setupTabIcons() {
-        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
-        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
-        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
-    }
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new OneFragment(), "ONE");
-        adapter.addFrag(new TwoFragment(), "TWO");
-        adapter.addFrag(new ThreeFragment(), "THREE");
+        adapter.addFrag(new OneFragment(), "Kalkulator");
+        adapter.addFrag(new TwoFragment(), "Bangun Datar");
+        adapter.addFrag(new ThreeFragment(), "Bangun Ruang");
         viewPager.setAdapter(adapter);
     }
 

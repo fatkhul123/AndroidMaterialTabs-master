@@ -6,13 +6,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import info.androidhive.materialtabs.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Toolbar toolbar;
-    private Button btnSimpleTabs, btnScrollableTabs, btnIconTextTabs, btnIconTabs, btnCustomIconTextTabs;
+    private Button  log;
+    private EditText email,pass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,39 +23,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        email = findViewById(R.id.email);
+        pass = findViewById(R.id.pass);
+        log = (Button) findViewById(R.id.log);
+        log.setOnClickListener(this);
 
-        btnSimpleTabs = (Button) findViewById(R.id.btnSimpleTabs);
-        btnScrollableTabs = (Button) findViewById(R.id.btnScrollableTabs);
-        btnIconTextTabs = (Button) findViewById(R.id.btnIconTextTabs);
-        btnIconTabs = (Button) findViewById(R.id.btnIconTabs);
-        btnCustomIconTextTabs = (Button) findViewById(R.id.btnCustomIconTabs);
-
-        btnSimpleTabs.setOnClickListener(this);
-        btnScrollableTabs.setOnClickListener(this);
-        btnIconTextTabs.setOnClickListener(this);
-        btnIconTabs.setOnClickListener(this);
-        btnCustomIconTextTabs.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.btnSimpleTabs:
-                startActivity(new Intent(MainActivity.this, SimpleTabsActivity.class));
-                break;
-            case R.id.btnScrollableTabs:
-                startActivity(new Intent(MainActivity.this, ScrollableTabsActivity.class));
-                break;
-            case R.id.btnIconTextTabs:
-                startActivity(new Intent(MainActivity.this, IconTextTabsActivity.class));
-                break;
-            case R.id.btnIconTabs:
-                startActivity(new Intent(MainActivity.this, IconTabsActivity.class));
-                break;
-            case R.id.btnCustomIconTabs:
-                startActivity(new Intent(MainActivity.this, CustomViewIconTextTabsActivity.class));
-                break;
+            case R.id.log:
+                String username = email.getText().toString();
+                String password = pass.getText().toString();
+                if (username.equalsIgnoreCase("Fatkhul")
+                        && password.equalsIgnoreCase("123")) {
+                    Toast.makeText(getApplicationContext(), "sukses login", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, IconTextTabsActivity.class));
+                    break;
+                } else if (username.isEmpty() && password.isEmpty()){
+                    Toast.makeText(getApplicationContext(), "isi dulu yang atas", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), "hah gagal", Toast.LENGTH_SHORT).show();
+                }
         }
     }
 }

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="info.androidhive.materialtabs" >
+    package="info.androidhive.materialtabs">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/MyMaterialTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".activity.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,30 +19,50 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.ScrollableTabsActivity"
-            android:label="@string/title_activity_scrollable_tabs"
-            android:parentActivityName=".activity.MainActivity" >
-        </activity>
-        <activity
-            android:name=".activity.SimpleTabsActivity"
-            android:label="@string/title_activity_simple_tabs"
-            android:parentActivityName=".activity.MainActivity" >
-        </activity>
-        <activity
             android:name=".activity.IconTextTabsActivity"
-            android:label="@string/title_activity_icon_text_tabs"
-            android:parentActivityName=".activity.MainActivity" >
+            android:label="Material Tabs"
+            android:theme="@style/AppTheme"
+            >
+
         </activity>
         <activity
-            android:name=".activity.IconTabsActivity"
-            android:label="@string/title_activity_icon_tabs"
-            android:parentActivityName=".activity.MainActivity" >
+            android:name=".bangunDatar.Persegi"
+            android:colorMode="default"
+            android:label="Persegi"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".activity.IconTextTabsActivity">>
+
         </activity>
         <activity
-            android:name=".activity.CustomViewIconTextTabsActivity"
-            android:label="@string/title_activity_custom_view_icon_text_tabs"
-            android:parentActivityName=".activity.MainActivity" >
+            android:name=".bangunDatar.persegi_panjang"
+            android:colorMode="default"
+            android:label="Persegi Panjang"
+            android:parentActivityName=".activity.IconTextTabsActivity">
+
         </activity>
+        <activity
+            android:name=".bangunDatar.segitiga"
+            android:colorMode="default"
+            android:label="Segitiga"
+            android:parentActivityName=".activity.IconTextTabsActivity">
+
+        </activity>
+        <activity
+            android:name=".bangunDatar.jajar_genjang"
+            android:colorMode="default"
+            android:label="Jajar Genjang"
+            android:parentActivityName=".activity.IconTextTabsActivity">
+
+        </activity>
+        <activity
+            android:name=".bangunDatar.lingkaran"
+            android:colorMode="default"
+            android:label="Lingkaran"
+            android:parentActivityName=".activity.IconTextTabsActivity">
+
+        </activity>
+
+
     </application>
 
 </manifest>
