@@ -26,7 +26,7 @@
 
         </activity>
         <activity
-            android:name=".bangunDatar.Persegi"
+            android:name=".bangun.Persegi"
             android:colorMode="default"
             android:label="Persegi"
             android:theme="@style/AppTheme"
@@ -34,34 +34,41 @@
 
         </activity>
         <activity
-            android:name=".bangunDatar.persegi_panjang"
+            android:name=".bangun.persegi_panjang"
             android:colorMode="default"
             android:label="Persegi Panjang"
             android:parentActivityName=".activity.IconTextTabsActivity">
 
         </activity>
         <activity
-            android:name=".bangunDatar.segitiga"
+            android:name=".bangun.segitiga"
             android:colorMode="default"
             android:label="Segitiga"
             android:parentActivityName=".activity.IconTextTabsActivity">
 
         </activity>
         <activity
-            android:name=".bangunDatar.jajar_genjang"
+            android:name=".bangun.jajar_genjang"
             android:colorMode="default"
             android:label="Jajar Genjang"
             android:parentActivityName=".activity.IconTextTabsActivity">
 
         </activity>
         <activity
-            android:name=".bangunDatar.lingkaran"
+            android:name=".bangun.lingkaran"
             android:colorMode="default"
             android:label="Lingkaran"
             android:parentActivityName=".activity.IconTextTabsActivity">
 
         </activity>
+        <activity
+            android:name=".bangun.Kubus"
+            android:colorMode="default"
+            android:label="Kubus"
+            android:theme="@style/AppTheme.popup"
+            android:parentActivityName=".activity.IconTextTabsActivity">
 
+        </activity>
 
     </application>
 

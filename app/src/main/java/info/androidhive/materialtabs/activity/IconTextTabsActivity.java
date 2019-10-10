@@ -17,17 +17,19 @@ import info.androidhive.materialtabs.fragments.OneFragment;
 import info.androidhive.materialtabs.fragments.ThreeFragment;
 import info.androidhive.materialtabs.fragments.TwoFragment;
 
+
 public class IconTextTabsActivity extends AppCompatActivity {
 
     private Toolbar toolbar2;
     private TabLayout Tl;
     private ViewPager viewPager;
-    private int [] tabicons ={
+
+
+    private int[] tabicons = {
             R.drawable.calculator,
             R.drawable.square,
             R.drawable.box,
     };
-
 
 
     @Override
@@ -35,20 +37,22 @@ public class IconTextTabsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_icon_text_tabs);
 
+        toolbar2 = (Toolbar) findViewById(R.id.toolbar1);
+        setSupportActionBar(toolbar2);
+
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
-        Tl = findViewById(R.id.tabs);
+
+        Tl = (TabLayout) findViewById(R.id.tabs);
         Tl.setupWithViewPager(viewPager);
-        setupTabicons();
-        toolbar2 = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar2);
+        setupTabIcons();
     }
-        private void setupTabicons(){
+
+    private void setupTabIcons() {
         Tl.getTabAt(0).setIcon(tabicons[0]);
         Tl.getTabAt(1).setIcon(tabicons[1]);
         Tl.getTabAt(2).setIcon(tabicons[2]);
-        }
-
+    }
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());

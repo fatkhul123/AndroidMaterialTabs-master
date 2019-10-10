@@ -7,13 +7,13 @@ android:layout_height="match_parent"
 android:background="#FFFFFF"
 android:orientation="vertical">
 
-<android.support.v7.widget.Toolbar
-    android:id="@+id/toolbar2"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#d50000"
-    android:minHeight="?attr/actionBarSize"
-    android:theme="@style/AppTheme" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme" />
 
 <android.support.design.widget.TextInputLayout
     android:layout_width="match_parent"

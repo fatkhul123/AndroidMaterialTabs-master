@@ -1,20 +1,19 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:background="#D8D2D2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2b2b2b"
         android:orientation="vertical"
         android:padding="16dp">
 
         <android.support.v7.widget.CardView
             android:id="@+id/CV"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
             android:layout_marginTop="15dp">
 
             <RelativeLayout
@@ -24,11 +23,13 @@
 
                 <ImageView
                     android:id="@+id/persegi"
-                    android:layout_width="120dp"
-                    android:layout_height="34dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginRight="16dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/yello"
+                    android:padding="10dp"
+
                     android:src="@drawable/square">
 
                 </ImageView>
@@ -36,14 +37,13 @@
                 <TextView
 
                     android:id="@+id/ps"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_toRightOf="@id/persegi"
                     android:hint="Persegi"
                     android:textColorHint="#000000"
-                    android:textSize="24sp"
-                    android:textStyle="normal|bold|italic" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
                 />
@@ -56,7 +56,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/CV2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="109dp"
             android:layout_marginTop="15dp">
 
             <RelativeLayout
@@ -66,23 +66,25 @@
 
                 <ImageView
                     android:id="@+id/persegipanjang"
-                    android:layout_width="120dp"
-                    android:layout_height="34dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginRight="16dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/yello"
+                    android:padding="10dp"
                     android:src="@drawable/rectangle" />
 
                 <TextView
                     android:id="@+id/pp"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="2dp"
                     android:layout_toRightOf="@+id/persegipanjang"
                     android:hint="Persegi Panjang"
+                    android:paddingLeft="10dp"
                     android:textColorHint="#000000"
-                    android:textSize="24sp"
-                    android:textStyle="normal|bold|italic" />
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
                 />
 
@@ -93,7 +95,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/CV3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="109dp"
             android:layout_marginTop="15dp">
 
             <RelativeLayout
@@ -103,23 +105,25 @@
 
                 <ImageView
                     android:id="@+id/segitiga"
-                    android:layout_width="120dp"
-                    android:layout_height="34dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginRight="16dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/yello"
+                    android:padding="10dp"
                     android:src="@drawable/triangle" />
 
                 <TextView
                     android:id="@+id/st"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="2dp"
                     android:layout_toRightOf="@+id/segitiga"
                     android:hint="Segitiga"
+                    android:paddingLeft="10dp"
                     android:textColorHint="#030000"
-                    android:textSize="24sp"
-                    android:textStyle="normal|bold|italic" />
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
                 />
 
@@ -130,7 +134,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/CV4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="109dp"
             android:layout_marginTop="15dp">
 
             <RelativeLayout
@@ -140,23 +144,25 @@
 
                 <ImageView
                     android:id="@+id/jajargenjang"
-                    android:layout_width="120dp"
-                    android:layout_height="34dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginRight="16dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/yello"
+                    android:padding="10dp"
                     android:src="@drawable/ppp" />
 
                 <TextView
                     android:id="@+id/jg"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="2dp"
                     android:layout_toRightOf="@+id/jajargenjang"
                     android:hint="Jajar Genjang"
+                    android:paddingLeft="10dp"
                     android:textColorHint="#000000"
-                    android:textSize="24sp"
-                    android:textStyle="normal|bold|italic" />
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
                 />
 
@@ -167,8 +173,9 @@
         <android.support.v7.widget.CardView
             android:id="@+id/CV5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp">
+            android:layout_height="109dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -177,23 +184,25 @@
 
                 <ImageView
                     android:id="@+id/lingkaran"
-                    android:layout_width="120dp"
-                    android:layout_height="34dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginRight="16dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/yello"
+                    android:padding="10dp"
                     android:src="@drawable/oval" />
 
                 <TextView
                     android:id="@+id/lk"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="2dp"
                     android:layout_toRightOf="@+id/lingkaran"
                     android:hint="Lingkaran"
+                    android:paddingLeft="10dp"
                     android:textColorHint="#000000"
-                    android:textSize="24sp"
-                    android:textStyle="normal|bold|italic" />
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
                 />
 

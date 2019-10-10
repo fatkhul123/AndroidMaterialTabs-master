@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/windowBackground"
+    android:orientation="vertical"
+   >
+
+  <TextView
+      android:id="@+id/close"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="   Number1"
+            android:textColorHint="@color/white"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            app:counterTextAppearance="@color/white"
+
+            >
+
+            <EditText
+                android:id="@+id/num1"
+                android:layout_width="276dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="120dp"
+                android:backgroundTint="@color/white"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/Black"
+                app:backgroundTint="@color/Black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/hasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:gravity="center_vertical"
+            android:hint="   Hasil"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="338dp"
+        android:layout_height="157dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/luas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/circle"
+            android:text="Luas "
+            android:textColor="@color/darkblue" />
+
+        <Button
+            android:id="@+id/voll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/circle"
+            android:text="Volume"
+            android:textColor="@color/darkblue" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

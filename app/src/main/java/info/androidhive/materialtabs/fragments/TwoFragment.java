@@ -6,15 +6,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import info.androidhive.materialtabs.R;
-import info.androidhive.materialtabs.bangunDatar.Persegi;
-import info.androidhive.materialtabs.bangunDatar.jajar_genjang;
-import info.androidhive.materialtabs.bangunDatar.lingkaran;
-import info.androidhive.materialtabs.bangunDatar.persegi_panjang;
-import info.androidhive.materialtabs.bangunDatar.segitiga;
+import info.androidhive.materialtabs.bangun.Persegi;
+import info.androidhive.materialtabs.bangun.jajar_genjang;
+import info.androidhive.materialtabs.bangun.lingkaran;
+import info.androidhive.materialtabs.bangun.persegi_panjang;
+import info.androidhive.materialtabs.bangun.segitiga;
 
 
 public class TwoFragment extends Fragment{
